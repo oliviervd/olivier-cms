@@ -9,6 +9,7 @@ import {s3Adapter} from "@payloadcms/plugin-cloud-storage/s3";
 
 import Users from './collections/globals/Users'
 import Media from './collections/globals/Media'
+import Globals from "./collections/globals/Globals";
 
 // config adapter to connect with S3 storage
 const adapter = s3Adapter({
@@ -50,7 +51,7 @@ export default buildConfig({
     bundler: webpackBundler(),
   },
   editor: slateEditor({}),
-  collections: [Users, Media],
+  collections: [Users, Media, Globals],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
   },
