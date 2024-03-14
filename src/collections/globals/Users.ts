@@ -5,7 +5,7 @@ const Users: CollectionConfig = {
   auth: true,
   admin: {
     useAsTitle: 'email',
-    group: "Globals"
+    group: "globals"
   },
   fields: [
     // Email added by default
