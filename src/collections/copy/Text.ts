@@ -3,6 +3,9 @@ import RichText from "../blocks/Text";
 
 const Text:CollectionConfig = {
     slug: "text",
+    admin: {
+        group:"copy"
+    },
     fields: [
         {
             // type of text
