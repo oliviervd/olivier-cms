@@ -7,7 +7,10 @@ const Text:CollectionConfig = {
         group:"copy"
     },
     access:{
-        read: ()=>true
+        read: ()=>true,
+        update: () =>true,
+        create: ()=> true,
+        delete: () => true
     },
     fields: [
         {
@@ -17,7 +20,8 @@ const Text:CollectionConfig = {
             type: "select",
             options: [
                 "about",
-                "article"
+                "article",
+                "cv"
             ]
         },
         {
