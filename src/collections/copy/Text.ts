@@ -6,6 +6,9 @@ const Text:CollectionConfig = {
     admin: {
         group:"copy"
     },
+    access:{
+        read: ()=>true
+    },
     fields: [
         {
             // type of text
