@@ -1,6 +1,6 @@
 {
   "name": "olivier-cms",
-  "description": "A blank template to get started with Payload",
+  "description": "CMS for portfolio website Olivier Van D'huynslager",
   "version": "1.0.0",
   "main": "dist/server.js",
   "license": "MIT",
