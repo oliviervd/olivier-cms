@@ -1,5 +1,6 @@
 import {CollectionConfig} from "payload/types";
 import RichText from "../blocks/Text";
+import Title from "../blocks/Title";
 
 const Text:CollectionConfig = {
     slug: "text",
@@ -29,6 +30,7 @@ const Text:CollectionConfig = {
             type: 'blocks', // required
             blocks: [
                 // add required block here
+                Title,
                 RichText,
             ]
         }
