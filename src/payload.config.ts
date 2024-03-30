@@ -11,6 +11,7 @@ import Users from './collections/globals/Users'
 import Media from './collections/globals/Media'
 import Globals from "./collections/globals/Globals";
 import Text from "./collections/copy/Text";
+import Project from "./collections/music/projects";
 
 
 
@@ -51,7 +52,7 @@ export default buildConfig({
     bundler: webpackBundler(),
   },
   editor: slateEditor({}),
-  collections: [Users, Media, Globals, Text],
+  collections: [Users, Media, Globals, Text, Project],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
   },
