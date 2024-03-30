@@ -2,6 +2,9 @@ import {CollectionConfig} from "payload/types";
 
 const Project:CollectionConfig = {
     slug: "project",
+    admin: {
+        useAsTitle: "title"
+    },
     access:{
         read: ()=>true,
         update: () =>true,
@@ -25,6 +28,26 @@ const Project:CollectionConfig = {
                             name: "description",
                             label: "description",
                             type: "richText"
+                        },
+                        {
+                            type: "row",
+                            fields: [
+                                {
+                                    name: "year",
+                                    label: "year",
+                                    type: "text"
+                                },
+                                {
+                                    name: "dateStart",
+                                    label: "date (start)",
+                                    type: "date"
+                                },
+                                {
+                                    name: "dateEnd",
+                                    label: "date (end)",
+                                    type: "date"
+                                }
+                            ]
                         }
                     ]
                 },
