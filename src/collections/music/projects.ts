@@ -2,6 +2,12 @@ import {CollectionConfig} from "payload/types";
 
 const Project:CollectionConfig = {
     slug: "project",
+    access:{
+        read: ()=>true,
+        update: () =>true,
+        create: ()=> true,
+        delete: () => true
+    },
     fields: [
         {
             type: "tabs",
