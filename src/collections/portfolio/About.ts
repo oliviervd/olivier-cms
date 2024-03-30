@@ -1,6 +1,7 @@
 import {CollectionConfig} from "payload/types";
+import {row} from "payload/dist/fields/config/schema";
 
-const About:CollectionConfig = {
+const Global:CollectionConfig = {
     slug: "about",
     admin: {
         group: "porfolio",
@@ -23,10 +24,21 @@ const About:CollectionConfig = {
             name: "readingNow",
             fields: [
                 {
-                    label: "title",
-                    name: "title",
-                    type: "text",
-                    required: true
+                    type: "row",
+                    fields: [
+                        {
+                            label: "title",
+                            name: "title",
+                            type: "text",
+                            required: true
+                        },
+                        {
+                            label: "url",
+                            name: "url",
+                            type: "text",
+                            required: true
+                        }
+                    ]
                 }
             ]
         },
@@ -38,4 +50,4 @@ const About:CollectionConfig = {
         }
     ]
 }
-export default About
+export default Global
