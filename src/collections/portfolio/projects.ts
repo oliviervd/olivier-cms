@@ -25,6 +25,11 @@ const Project:CollectionConfig = {
                             required: true
                         },
                         {
+                            name: "brief",
+                            label: "brief description",
+                            type: "richText"
+                        },
+                        {
                             name: "description",
                             label: "description",
                             type: "richText"
