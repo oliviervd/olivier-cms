@@ -59,9 +59,24 @@ const Project:CollectionConfig = {
                             label: "hero",
                             type: "relationship",
                             relationTo: "media"
+                        },
+                        {
+                            name: "mediaLink",
+                            label: "external media (url)",
+                            type: "text"
                         }
                     ]
                 }
+            ]
+        },
+        {
+            name: "type",
+            label: "type",
+            type: "select",
+            options: [
+                "music",
+                "curatorial",
+                "coding"
             ]
         },
         {
