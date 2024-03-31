@@ -3,7 +3,8 @@ import {CollectionConfig} from "payload/types";
 const Project:CollectionConfig = {
     slug: "project",
     admin: {
-        useAsTitle: "title"
+        useAsTitle: "title",
+        group: "portfolio"
     },
     access:{
         read: ()=>true,

@@ -3,6 +3,7 @@ import {CollectionConfig} from "payload/types";
 const Music:CollectionConfig = {
     slug: "music",
     admin: {
+        useAsTitle: "title",
         group: "portfolio"
     },
     access: {
