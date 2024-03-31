@@ -73,6 +73,9 @@ const Project:CollectionConfig = {
             name: "type",
             label: "type",
             type: "select",
+            admin: {
+                position: "sidebar"
+            },
             options: [
                 "music",
                 "curatorial",
@@ -80,13 +83,24 @@ const Project:CollectionConfig = {
             ]
         },
         {
-            name: "cv",
-            label: "cv",
+            type: "row",
             admin: {
                 position: "sidebar"
             },
-            type: "checkbox"
-        }
+            fields: [
+                {
+                    name: "cv",
+                    label: "cv",
+                    type: "checkbox"
+                },
+                {
+                    name: "home",
+                    label: "home",
+                    type: "checkbox",
+                }
+            ]
+        },
+
     ]
 }
 export  default Project
