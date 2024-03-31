@@ -79,6 +79,7 @@ const Project:CollectionConfig = {
             name: "type",
             label: "type",
             type: "select",
+            defaultValue: false,
             admin: {
                 position: "sidebar"
             },
