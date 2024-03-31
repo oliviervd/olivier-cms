@@ -79,7 +79,6 @@ const Project:CollectionConfig = {
             name: "type",
             label: "type",
             type: "select",
-            defaultValue: false,
             admin: {
                 position: "sidebar"
             },
@@ -98,12 +97,14 @@ const Project:CollectionConfig = {
                 {
                     name: "cv",
                     label: "cv",
-                    type: "checkbox"
+                    type: "checkbox",
+                    defaultValue: false
                 },
                 {
                     name: "home",
                     label: "home",
                     type: "checkbox",
+                    defaultValue: false
                 }
             ]
         },
