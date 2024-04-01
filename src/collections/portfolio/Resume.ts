@@ -1,9 +1,21 @@
 import {CollectionConfig, Field} from "payload/types";
 
 const Title:Field = {
-    name: "title",
-    label: "title",
-    type: "text"
+    type: "row",
+    fields: [
+        {
+            name: "title",
+            label: "title",
+            type: "text"
+        },
+        {
+            name: "display",
+            label: "display",
+            type: "checkbox",
+            defaultValue: false
+        }
+    ]
+
 }
 
 const Organization:Field = {
@@ -24,12 +36,6 @@ const Duration: Field = {
             name: "endDate",
             label: "end",
             type: "text"
-        },
-        {
-            name: "display",
-            label: "display",
-            type: "checkbox",
-            defaultValue: false
         }
     ]
 }
@@ -111,7 +117,13 @@ const Resume:CollectionConfig = {
                                     name: "commissions",
                                     fields: [
                                         Title,
-                                        Duration
+                                        Duration,
+                                        {
+                                            type: "relationship",
+                                            name: "relatedProjects",
+                                            label: "related projects",
+                                            relationTo: "project"
+                                        }
                                     ]
                                 }
                             ]
