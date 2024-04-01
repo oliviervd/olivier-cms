@@ -24,6 +24,12 @@ const Duration: Field = {
             name: "endDate",
             label: "end",
             type: "text"
+        },
+        {
+            name: "display",
+            label: "display",
+            type: "checkbox",
+            defaultValue: false
         }
     ]
 }
@@ -43,6 +49,16 @@ const Resume:CollectionConfig = {
         {
             type: "tabs",
             tabs: [
+                {
+                    label: "text",
+                    fields: [
+                        {
+                            name: "intro",
+                            label: "intro",
+                            type: "richText"
+                        }
+                    ]
+                },
                 {
                     label: "overview",
                     fields: [
