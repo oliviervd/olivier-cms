@@ -31,6 +31,12 @@ const Music:CollectionConfig = {
                     label:"project",
                     type: "relationship",
                     relationTo: "project"
+                },
+                {
+                    name: "type",
+                    label: "type",
+                    type: "select",
+                    options: ["personal", "commission"]
                 }
             ]
         },
@@ -40,6 +46,13 @@ const Music:CollectionConfig = {
             label:"audio file",
             type: "relationship",
             relationTo: "media"
+        },
+        {
+            name: "tags",
+            label: "tags",
+            type: "select",
+            hasMany: true,
+            options: ["ambient", "electronic", "soundtrack"]
         },
         {
             name: "porfolio",
