@@ -123,6 +123,12 @@ const Resume:CollectionConfig = {
                                             name: "relatedProjects",
                                             label: "related projects",
                                             relationTo: "project"
+                                        },
+                                        {
+                                            label: "type",
+                                            name: "type",
+                                            type: "select",
+                                            options: ["curatorial", "web-dev", "music"]
                                         }
                                     ]
                                 }
