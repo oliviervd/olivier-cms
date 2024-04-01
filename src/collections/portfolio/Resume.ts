@@ -69,7 +69,7 @@ const Resume:CollectionConfig = {
                             fields: [
                                 {
                                     type: "array",
-                                    name: "experiences",
+                                    name: "educations",
                                     fields: [
                                         Title,
                                         Organization,
