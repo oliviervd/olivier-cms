@@ -37,7 +37,8 @@ const Duration: Field = {
 const Resume:CollectionConfig = {
     slug: "resume",
     admin: {
-        group: "portfolio"
+        group: "portfolio",
+        useAsTitle: "resumeTitle"
     },
     access: {
         read: () => true,
@@ -46,6 +47,11 @@ const Resume:CollectionConfig = {
         update:() => true,
     },
     fields: [
+        {
+            name: "resumeTitle",
+            label: "resume title",
+            type: "text",
+        },
         {
             type: "tabs",
             tabs: [
