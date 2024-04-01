@@ -4,7 +4,7 @@ import {row} from "payload/dist/fields/config/schema";
 const Global:CollectionConfig = {
     slug: "about",
     admin: {
-        group: "porfolio",
+        group: "portfolio",
     },
     access: {
         read: ()=>true,

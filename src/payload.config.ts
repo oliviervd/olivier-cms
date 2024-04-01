@@ -13,6 +13,7 @@ import Text from "./collections/copy/Text";
 import Project from "./collections/portfolio/projects";
 import Global from "./collections/portfolio/About";
 import Music from "./collections/portfolio/music";
+import Pages from "./collections/portfolio/Pages";
 
 export default buildConfig({
   //adapter for cloud storage
@@ -51,7 +52,7 @@ export default buildConfig({
     bundler: webpackBundler(),
   },
   editor: slateEditor({}),
-  collections: [Users, Media, Text, Project, Global, Music],
+  collections: [Users, Media, Text, Project, Global, Music, Pages],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
   },
