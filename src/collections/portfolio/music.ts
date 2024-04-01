@@ -40,12 +40,14 @@ const Music:CollectionConfig = {
                 }
             ]
         },
-
         {
             name:"audioFile",
             label:"audio file",
             type: "relationship",
-            relationTo: "media"
+            relationTo: "media",
+            filterOptions: {
+                mimeType: { contains: 'image' },
+            },
         },
         {
             name: "tags",

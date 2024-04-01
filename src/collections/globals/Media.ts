@@ -11,7 +11,8 @@ const Media:CollectionConfig = {
         staticDir: "/media",
         disableLocalStorage: true,
         // todo: add admin thumbnail
-        mimeTypes: ["image/*", "audio/*"]
+        mimeTypes: ["image/*", "audio/*"],
+
     },
     access: {
         read: () => true,
