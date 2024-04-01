@@ -4,6 +4,7 @@ const Pages:CollectionConfig = {
     slug: "page",
     admin: {
         group: "portfolio",
+        useAsTitle: "title"
     },
     access: {
         read: () => true,
