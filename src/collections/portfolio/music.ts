@@ -46,7 +46,7 @@ const Music:CollectionConfig = {
             type: "relationship",
             relationTo: "media",
             filterOptions: {
-                mimeType: { contains: 'image' },
+                mimeType: { contains: 'audio' },
             },
         },
         {
