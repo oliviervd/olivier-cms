@@ -81,13 +81,35 @@ const Library:CollectionConfig = {
             type: "text",
         },
         {
+            type: "row",
+            admin: {
+              position: "sidebar"
+            },
+            fields: [
+                {
+                    name: "type",
+                    label: "type",
+                    type: "select",
+                    options: [
+                        "fiction",
+                        "non-fiction"
+                    ]
+                },
+                {
+                    name:"pages",
+                    label: "pages",
+                    type: "number"
+                }
+            ]
+        },
+        {
             name: "reading",
             label: "reading",
             type: "checkbox",
             admin: {
                 position: "sidebar"
             }
-        }
+        },
     ]
 }
 export default Library
