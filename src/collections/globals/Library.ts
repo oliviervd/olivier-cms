@@ -2,6 +2,27 @@ import {CollectionConfig} from "payload/types";
 
 const Library:CollectionConfig = {
     slug: "library",
+    hooks:{
+        // generate Linked Data (JSON-LD)
+        afterRead: [
+            async ({ doc }) => {
+                const jsonLDOverlay = {
+                    "@context": "https://schema.org/",
+                    "@type": "Book",
+                    "name": doc.title,
+                    "author": {
+                        "@type": "Person",
+                        "name": doc.author
+                    }
+                };
+                return {
+                    ...doc,
+                    jsonLD: jsonLDOverlay
+                }
+            },
+
+        ]
+    },
     admin: {
         group: "collections",
         useAsTitle: "title",
