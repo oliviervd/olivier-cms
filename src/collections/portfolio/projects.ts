@@ -108,7 +108,13 @@ const Project:CollectionConfig = {
                 }
             ]
         },
-
+        {
+            name: 'URI',
+            type: "text",
+            admin: {
+                position: 'sidebar'
+            }
+        }
     ]
 }
 export  default Project
