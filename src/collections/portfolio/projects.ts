@@ -117,10 +117,11 @@ const Project:CollectionConfig = {
             }
         }
     ],
+
     hooks: {
         beforeOperation: [
             async({operation, req, args, context}) => {
-            if (operation === 'findByID') {
+            if (operation === 'read') {
                 const {id} = args;
                 const project = await context.find({
                     collection: "project",
