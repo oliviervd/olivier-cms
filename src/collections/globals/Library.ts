@@ -3,6 +3,7 @@ import {CollectionConfig} from "payload/types";
 const Library:CollectionConfig = {
     slug: "library",
     admin: {
+        group: "collections",
         useAsTitle: "title",
     },
     access:{
@@ -22,6 +23,26 @@ const Library:CollectionConfig = {
             name:"author",
             label:"author",
             type: "text",
+        },
+        {
+            type: "row",
+            fields: [
+                {
+                    label: "width",
+                    name: "width",
+                    type: "number"
+                },
+                {
+                    label: "height",
+                    name: "height",
+                    type: "number"
+                },
+                {
+                    label: "depth",
+                    name: "depth",
+                    type: "number"
+                }
+            ]
         },
         {
             name:"url",
