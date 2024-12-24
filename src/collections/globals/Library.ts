@@ -41,9 +41,19 @@ const Library:CollectionConfig = {
             required:true
         },
         {
-            name:"author",
-            label:"author",
-            type: "text",
+            type: "row",
+            fields: [
+                {
+                    name:"author",
+                    label:"author",
+                    type: "text",
+                },
+                {
+                    name:"authorWebsite",
+                    label:"author website",
+                    type: "text",
+                }
+            ]
         },
         {
             type: "row",
@@ -69,6 +79,14 @@ const Library:CollectionConfig = {
             name:"url",
             label:"url",
             type: "text",
+        },
+        {
+            name: "reading",
+            label: "reading",
+            type: "checkbox",
+            admin: {
+                position: "sidebar"
+            }
         }
     ]
 }
