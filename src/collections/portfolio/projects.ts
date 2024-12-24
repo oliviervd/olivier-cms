@@ -111,10 +111,28 @@ const Project:CollectionConfig = {
         {
             name: 'URI',
             type: "text",
+            unique: true,
             admin: {
                 position: 'sidebar'
             }
         }
-    ]
+    ],
+    hooks: {
+        beforeOperation: [
+            async({operation, req, args, context}) => {
+            if (operation === 'findByID') {
+                const {id} = args;
+                const project = await context.find({
+                    collection: "project",
+                    where: { URI: {equals: id}}
+                });
+
+                if (project.docs.length > 0) {
+                    args.id = project.docs[0].id;
+                }
+            }
+            }
+        ]
+    }
 }
 export  default Project
