@@ -1,7 +1,7 @@
 import {CollectionConfig} from "payload/types";
 
 const Library:CollectionConfig = {
-    slug: "library",
+    slug: "book",
     hooks:{
         // generate Linked Data (JSON-LD)
         afterRead: [
