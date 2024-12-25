@@ -133,6 +133,14 @@ const Library:CollectionConfig = {
               }
           ]
         },
+        {
+            name: "isbn",
+            type: "text",
+            unique: true,
+            admin: {
+                position: 'sidebar'
+            }
+        }
 
     ]
 }
