@@ -140,7 +140,8 @@ const Library:CollectionConfig = {
                 "architecture",
                 "theory",
                 "history",
-                "feminism"
+                "feminism",
+                "science-fiction"
             ],
             admin: {
                 position: "sidebar"
