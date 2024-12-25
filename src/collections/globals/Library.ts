@@ -78,6 +78,26 @@ const Library:CollectionConfig = {
             ]
         },
         {
+            type:'row',
+            fields: [
+                {
+                    name: "publisher",
+                    label: "publisher",
+                    type: "text"
+                },
+                {
+                    name:"datePublished",
+                    label: "date publisher",
+                    type: "date",
+                    admin: {
+                        date: {
+                            pickerAppearance: "dayOnly"
+                        }
+                    }
+                }
+            ]
+        },
+        {
             name:"url",
             label:"url",
             type: "text",
