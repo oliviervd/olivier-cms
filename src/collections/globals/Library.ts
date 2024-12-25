@@ -103,13 +103,33 @@ const Library:CollectionConfig = {
             ]
         },
         {
-            name: "reading",
-            label: "reading",
-            type: "checkbox",
-            admin: {
-                position: "sidebar"
-            }
+          type: "row",
+          admin: {
+              position: "sidebar"
+          },
+          fields: [
+              {
+                  name: "reading",
+                  label: "reading",
+                  type: "checkbox",
+              },
+              {
+                  name: "category",
+                  label: "categories",
+                  type: "select",
+                  hasMany: true,
+                  options: [
+                      "art history",
+                      "design history",
+                      "museology",
+                      "computation",
+                      "AI",
+                      "ecology"
+                  ]
+              }
+          ]
         },
+
     ]
 }
 export default Library
