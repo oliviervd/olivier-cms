@@ -12,8 +12,10 @@ const Library:CollectionConfig = {
                     "name": doc.title,
                     "author": {
                         "@type": "Person",
-                        "name": doc.author
-                    }
+                        "name": doc.author,
+                        "url": doc.authorWebsite || null,
+                    },
+                    "isbn": doc.isbn || null,
                 };
                 return {
                     ...doc,
@@ -103,6 +105,27 @@ const Library:CollectionConfig = {
             ]
         },
         {
+            name: "category",
+            label: "categories",
+            type: "select",
+            hasMany: true,
+            options: [
+                "art",
+                "design",
+                "museology",
+                "computation",
+                "AI",
+                "ecology",
+                "philosophy",
+                "architecture",
+                "theory",
+                "history"
+            ],
+            admin: {
+                position: "sidebar"
+            }
+        },
+        {
           type: "row",
           admin: {
               position: "sidebar"
@@ -112,24 +135,6 @@ const Library:CollectionConfig = {
                   name: "reading",
                   label: "reading",
                   type: "checkbox",
-              },
-              {
-                  name: "category",
-                  label: "categories",
-                  type: "select",
-                  hasMany: true,
-                  options: [
-                      "art",
-                      "design",
-                      "museology",
-                      "computation",
-                      "AI",
-                      "ecology",
-                      "philosophy",
-                      "architecture",
-                      "theory",
-                      "history"
-                  ]
               }
           ]
         },
