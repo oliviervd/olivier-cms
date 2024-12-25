@@ -119,12 +119,16 @@ const Library:CollectionConfig = {
                   type: "select",
                   hasMany: true,
                   options: [
-                      "art history",
-                      "design history",
+                      "art",
+                      "design",
                       "museology",
                       "computation",
                       "AI",
-                      "ecology"
+                      "ecology",
+                      "philosophy",
+                      "architecture",
+                      "theory",
+                      "history"
                   ]
               }
           ]
