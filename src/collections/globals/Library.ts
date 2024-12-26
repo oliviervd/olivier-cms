@@ -143,7 +143,8 @@ const Library:CollectionConfig = {
                 "theory",
                 "history",
                 "feminism",
-                "science-fiction"
+                "science-fiction",
+                "media"
             ],
             admin: {
                 position: "sidebar"
