@@ -108,6 +108,15 @@ const Resume:CollectionConfig = {
                             ]
                         },
                         {
+                            // teaching
+                            type: "collapsible",
+                            label: "teaching",
+                            fields: [
+                                Title,
+                                Duration
+                            ]
+                        },
+                        {
                             // commissions/projects
                             type: "collapsible",
                             label: "projects",
