@@ -132,6 +132,7 @@ const Library:CollectionConfig = {
             options: [
                 "art",
                 "design",
+                "graphic design",
                 "museology",
                 "computation",
                 "AI",
