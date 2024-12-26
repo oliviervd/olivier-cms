@@ -133,6 +133,7 @@ const Library:CollectionConfig = {
                 "art",
                 "design",
                 "graphic design",
+                "exhibition catalogue",
                 "museology",
                 "computation",
                 "AI",
