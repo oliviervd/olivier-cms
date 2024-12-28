@@ -52,7 +52,6 @@ const Library:CollectionConfig = {
                 },
             ]
         },
-
         {
             type: "row",
             fields: [
@@ -145,6 +144,7 @@ const Library:CollectionConfig = {
                 "design",
                 "graphic design",
                 "exhibition catalogue",
+                "curatorial",
                 "museology",
                 "computation",
                 "AI",
