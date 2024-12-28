@@ -155,7 +155,8 @@ const Library:CollectionConfig = {
                 "history",
                 "feminism",
                 "science-fiction",
-                "media"
+                "media",
+                "urban"
             ],
             admin: {
                 position: "sidebar"
