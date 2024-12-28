@@ -37,11 +37,22 @@ const Library:CollectionConfig = {
     },
     fields:[
         {
-            name: "title",
-            label: "title",
-            type: "text",
-            required:true
+            type: "row",
+            fields: [
+                {
+                    name: "title",
+                    label: "title",
+                    type: "text",
+                    required:true
+                },
+                {
+                    name: "subtitle",
+                    label: "subtitle",
+                    type: "text",
+                },
+            ]
         },
+
         {
             type: "row",
             fields: [
