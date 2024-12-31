@@ -156,7 +156,8 @@ const Library:CollectionConfig = {
                 "feminism",
                 "science-fiction",
                 "media",
-                "urban"
+                "urban",
+                "weaving"
             ],
             admin: {
                 position: "sidebar"
