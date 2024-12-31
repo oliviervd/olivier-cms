@@ -135,6 +135,25 @@ const Library:CollectionConfig = {
             ]
         },
         {
+          type: "row",
+          fields: [
+              {
+                  name: "magazine",
+                  label: "magazine",
+                  type: "checkbox"
+              },
+              {
+                  name: "book",
+                  label: "book",
+                  type: "checkbox",
+                  defaultValue: true
+              },
+          ],
+            admin: {
+              position: "sidebar"
+            }
+        },
+        {
             name: "category",
             label: "categories",
             type: "select",
