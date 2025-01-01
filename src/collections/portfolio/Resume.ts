@@ -112,8 +112,21 @@ const Resume:CollectionConfig = {
                             type: "collapsible",
                             label: "teaching",
                             fields: [
-                                Title,
-                                Duration
+                                {
+                                    type: "array",
+                                    name: "teachings",
+                                    fields: [
+                                        Title,
+                                        Organization,
+                                        Duration,
+                                        {
+                                            label: "type",
+                                            name: "type",
+                                            type: "select",
+                                            options: ["workshop", "lecture"]
+                                        }
+                                    ]
+                                }
                             ]
                         },
                         {
