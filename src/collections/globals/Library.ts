@@ -176,7 +176,9 @@ const Library:CollectionConfig = {
                 "science-fiction",
                 "media",
                 "urban",
-                "weaving"
+                "weaving",
+                "sociology",
+                "creative-coding"
             ],
             admin: {
                 position: "sidebar"
