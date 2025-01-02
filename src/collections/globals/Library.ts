@@ -178,7 +178,8 @@ const Library:CollectionConfig = {
                 "urban",
                 "weaving",
                 "sociology",
-                "creative-coding"
+                "creative-coding",
+                "fashion"
             ],
             admin: {
                 position: "sidebar"
